@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Administrar - Taxas</title>
+
+    <!-- Ligação com o arquivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='taxas.css') }}">
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+
+        <!-- Logo do CredMais -->
+        <div class="area-logo">
+            <img
+            class="logo"
+            src="{{ url_for('logo') }}"
+            alt="Logo CredMais"
+            >
+        </div>
+
+        <!-- Menu de navegação -->
+        <div class="menu">
+
+            <div class="item-menu">Dashboard</div>
+            <div class="item-menu">Perfil</div>
+            <div class="item-menu pagina-atual">Taxas</div>
+            <div class="item-menu">Simulação</div>
+            <div class="item-menu">Empréstimos</div>
+            <div class="item-menu">Movimentações</div>
+
+        </div>
+
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Título e botão de cadastro -->
+        <div class="cabecalho-taxas">
+
+            <div class="titulo-pagina">
+
+                <!-- Ícone da página -->
+
+                <div class="icone-taxas">
+                    <img src="{{ url_for('icone_taxas') }}"
+                         alt="Ícone de taxas">
+                </div>
+
+
+                <!-- Nome e descrição -->
+                <div class="texto-titulo">
+                    <h1>Administrar / Taxas</h1>
+                    <p>Administre suas taxas.</p>
+                </div>
+
+            </div>
+
+            <!-- Botão para cadastrar taxa -->
+            <button class="botao-cadastrar" type="button">
+                + Cadastrar taxa
+            </button>
+
+        </div>
+
+        <!-- Lista de taxas -->
+        <div class="lista-taxas">
+
+            <h2>Lista de Taxas</h2>
+
+            <!-- Cabeçalho da lista -->
+            <div class="linha-titulo">
+
+                <div>Ano/Exercício</div>
+                <div>Taxa mensal</div>
+                <div>Ações</div>
+
+            </div>
+
+            <!-- Taxa do ano de 2025 -->
+            <div class="linha-taxa">
+
+                <div>2025</div>
+                <div>2,00%</div>
+
+                <div class="botoes-acoes">
+                    <button class="botao-editar" type="button">Editar</button>
+                    <button class="botao-excluir" type="button">Excluir</button>
+                </div>
+
+            </div>
+
+            <!-- Taxa do ano de 2024 -->
+            <div class="linha-taxa">
+
+                <div>2024</div>
+                <div>2,50%</div>
+
+                <div class="botoes-acoes">
+                    <button class="botao-editar" type="button">Editar</button>
+                    <button class="botao-excluir" type="button">Excluir</button>
+                </div>
+
+            </div>
+
+            <!-- Taxa do ano de 2023 -->
+            <div class="linha-taxa">
+
+                <div>2023</div>
+                <div>3,00%</div>
+
+                <div class="botoes-acoes">
+                    <button class="botao-editar" type="button">Editar</button>
+                    <button class="botao-excluir" type="button">Excluir</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
